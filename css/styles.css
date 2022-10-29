@@ -31,6 +31,9 @@ body {
 .site-nav .link:focus {
   color: var(--title-txt-color);
 }
+.site-nav .link.current {
+  color: var(--title-txt-color);
+}
 /* Hero  */
 .hero-title {
   color: var(--title-txt-color);
