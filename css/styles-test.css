@@ -1,0 +1,12 @@
+body {
+  font-family: "Amatic SC", cursive;
+}
+
+pre::first-letter {
+  font-size: 32px;
+  color: darkred;
+}
+pre::selection {
+  color: azure;
+  background-color: blueviolet;
+}
