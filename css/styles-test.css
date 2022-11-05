@@ -1,7 +1,50 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Amatic SC", cursive;
 }
+/* лого и меню в одну срочку выровнять  */
 
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: darkslategray;
+  border-radius: 4px;
+}
+.logo {
+  color: papayawhip;
+  background-color: brown;
+  border-radius: 4px;
+  padding: 15px;
+  text-decoration: none;
+}
+.menu {
+  display: flex;
+  padding: 15px;
+  border-radius: 4px;
+  list-style: none;
+  background-color: brown;
+  margin:0;
+}
+.menu > .item:not(:last-child) {
+  margin-right: 10px;
+}
+.menu .link {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: papayawhip;
+}
+.menu .link:hover,
+.menu .link:focus,
+.logo:hover,
+.logo:focus {
+  text-decoration: underline;
+}
 pre::first-letter {
   font-size: 32px;
   color: darkred;
@@ -10,3 +53,4 @@ pre::selection {
   color: azure;
   background-color: blueviolet;
 }
+
